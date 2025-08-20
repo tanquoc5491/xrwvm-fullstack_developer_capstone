@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding: 20px;">
+    <div class="banner" name="contact-header" style="margin-bottom: 20px;">
+      <h1>Contact Us</h1>
+      <p>If you have questions or need assistance, feel free to reach out to us. 
+         Our team will get back to you as soon as possible.</p>
+    </div>
+
+    <div class="row">
+      <!-- Left Column: Contact Form -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Type your message here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="background-color: darkturquoise; border: none;">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Column: Dealership Info -->
+      <div class="col-md-6">
+        <div class="card" style="padding: 20px; background-color: #f8f9fa; height: 100%;">
+          <h4>Our Dealership</h4>
+          <p><i class="bi bi-geo-alt-fill" style="color: darkturquoise;"></i> 123 Main Street, New York, NY 10001</p>
+          <p><i class="bi bi-telephone-fill" style="color: darkturquoise;"></i> +1 (555) 123-4567</p>
+          <p><i class="bi bi-envelope-fill" style="color: darkturquoise;"></i> contact@bestcars.com</p>
+          <p><i class="bi bi-clock-fill" style="color: darkturquoise;"></i> Mon - Sat: 9:00 AM - 6:00 PM</p>
+          
+          <!-- Optional Map -->
+          <div style="margin-top: 15px;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.908509685229!2d-74.00594108459293!3d40.71277527933069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjAuMCJX!5e0!3m2!1sen!2sus!4v1616615560000!5m2!1sen!2sus" 
+              width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</html>
